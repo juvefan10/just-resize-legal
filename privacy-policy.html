@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Just Resize - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; background: #f8fafc; line-height: 1.7; }
+        .container { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .date { color: #64748b; font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+        p, li { font-size: 15px; color: #334155; margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        a { color: #2563eb; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="date">Just Resize &mdash; Last updated: November 3, 2026</p>
+
+        <h2>Overview</h2>
+        <p>Just Resize is an image compression and resizing app. Your privacy is important to us. This policy explains what data we collect (very little) and how we handle it.</p>
+
+        <h2>Data We Collect</h2>
+        <p><strong>We do not collect, store, or transmit any personal data.</strong></p>
+        <ul>
+            <li>All image processing happens locally on your device.</li>
+            <li>Your images are never uploaded to any server.</li>
+            <li>Scanning your library for screenshots and documents also happens entirely on your device. The app reads your photos to measure and classify them; it does not copy or transmit them, and builds no library-wide index of its own.</li>
+            <li>Compressed files are saved without the original photo's metadata, including the location where it was taken.</li>
+            <li>We do not use analytics, tracking, or advertising SDKs.</li>
+        </ul>
+
+        <h2>Data Stored on Your Device</h2>
+        <p>The app stores the following data locally on your device using app preferences:</p>
+        <ul>
+            <li><strong>Total bytes saved</strong> &mdash; a counter of how much storage space you have saved.</li>
+            <li><strong>Daily usage count</strong> &mdash; tracks how many images you have resized today (resets daily).</li>
+            <li><strong>Subscription status</strong> &mdash; whether the pro version is unlocked, if a subscription is offered in your version of the app.</li>
+            <li><strong>Photos you have already processed</strong> &mdash; file identifiers for the photos you have resized, so a later "Free up space" scan can skip what you have already dealt with. This is a list of the photos' own names and locations on your device, not the photos themselves.</li>
+            <li><strong>Originals waiting to be deleted</strong> &mdash; the name, location, size and date of files the app made a smaller copy of, so the reminder to delete the originals survives a restart.</li>
+            <li><strong>Recently replaced originals</strong> &mdash; the name and size of files the app replaced, so the Bin can show you what was replaced and when.</li>
+        </ul>
+        <p>This data never leaves your device, is not transmitted to us or to anyone else, and is deleted when you uninstall the app.</p>
+
+        <h2>Subscriptions &amp; Payments</h2>
+        <p>If your version of Just Resize offers a subscription, it is an optional yearly subscription, handled entirely by the Apple App Store on iOS or Google Play on Android. We never see or handle your payment details.</p>
+        <p><strong>There is no third party involved in your subscription.</strong> The app asks your device's own App Store or Google Play whether the subscription is currently active, and that answer stays on your device. There is no analytics provider, no subscription-management service, and no server of ours in between &mdash; we operate no servers at all. Nothing about your purchase is sent to us.</p>
+        <p>Apple and Google handle your payment under their own privacy policies, which govern the information they collect when you buy anything from them.</p>
+
+        <h2>Network Use</h2>
+        <p>The app makes no network requests of its own. Everything it does &mdash; opening, measuring, scanning and compressing your photos &mdash; happens on your device, with no internet connection required. The only network activity is your device talking to the App Store or Google Play to confirm your subscription, which the operating system performs, not the app.</p>
+
+        <h2>Permissions</h2>
+        <p>The app requests the following permissions:</p>
+        <ul>
+            <li><strong>Picking photos</strong> &mdash; choosing individual photos to resize uses your device's own system photo picker. On Android 13 and later this needs no permission at all; the app only ever receives the photos you hand it.</li>
+            <li><strong>Reading your photo library (for Scan only)</strong> &mdash; the "Free up space" scan looks through the images on your device to find screenshots and photographed documents that are taking up room. This needs broader access: <em>Photo library</em> access on iOS, and the <em>READ_MEDIA_IMAGES</em> permission on Android 13 and later. It is requested the first time you tap Scan, never on launch, and never for ordinary resizing. If you share only selected photos rather than your whole library, the scan works over exactly those and tells you so.</li>
+            <li><strong>Reading your videos (for Shrink Big Videos only)</strong> &mdash; the video tool needs to look through the videos on your device to find the largest ones. On Android 13 and later this uses the <em>READ_MEDIA_VIDEO</em> permission. It is requested at the point you use that feature, never on launch, and it is not needed for resizing photos.</li>
+            <li><strong>Saving photos</strong> &mdash; to write the compressed result back to your library. On Android 12 and below this uses the write-storage permission.</li>
+            <li><strong>Internet</strong> &mdash; declared only so the store can verify your subscription. Your images are never transmitted, and the app itself contacts no servers.</li>
+        </ul>
+        <p><strong>What the scan does with your photos.</strong> Every image it examines is read, measured and analysed entirely on your device. Nothing is uploaded and nothing is sent to us or to anyone else. The scan's results exist only in the app's memory while you are looking at them; the only thing kept afterwards is the list of photos you have already processed, described under <em>Data Stored on Your Device</em> above.</p>
+
+        <h2>Replacing Original Photos</h2>
+        <p>The app can optionally replace an original photo with its compressed version. This always requires your explicit confirmation in the app before it happens, and the app never deletes anything you have not asked it to.</p>
+        <p>How the original is removed depends on your device. On iOS, deletion always goes through the system photo-deletion prompt, so the original lands in Recently Deleted and can be restored from there for 30 days. On Android 11 and later, most photos go through the equivalent system prompt and land in the device's own trash, also for 30 days. On Android 10 and earlier the app will not replace an original at all, because those versions have no system trash to recover it from.</p>
+        <p>Because compression is lossy and the replacement is never identical to the original, keep your own backups of anything irreplaceable.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>This app is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+        <h2>Open-Source Components</h2>
+        <p>The app is built with open-source software, including a JPEG encoder derived from libjpeg-turbo and a WebP encoder derived from libwebp. The copyright notices and licence texts those require are listed in <a href="./third-party-notices.html">Third-Party Notices</a>.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this policy from time to time. Changes will be reflected by the "Last updated" date above.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy, contact us at: <a href="mailto:digitalbits64@gmail.com">digitalbits64@gmail.com</a></p>
+    </div>
+</body>
+</html>
